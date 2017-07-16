@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+head
+  link(rel='stylesheet', href='css/main.css')
+  title Hello World
+
+body
+
+ h1 Templating Using Pug
+ p #{msg}
+ h1 #{msg}
+ a(href='/home') Home
+ 
+ form(action='/login' method='post')
+  input(type='text', name='username', placeholder)
+  br
+  input(type='password', name='password' placeholder)
+  br
+  button(type='submit') Login
